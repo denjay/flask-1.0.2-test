@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/static/vue.js"></script>
+    <style>
+        div{
+            height:100%; 
+            writing-mode:tb-rl;} 
+    </style>
+</head>
+<body>
+    <div>非师范发射点法说的方法（奋斗）<span v-html="style.one"></span></div>
+</body>
+<script>
+    var test = new Vue({
+        el: 'div',
+        data: {
+            style:{"one":"<span style='background-color:red;'>哈哈哈哈</span>","two":"df"}
+        }
+    })
+</script>
+</html>
